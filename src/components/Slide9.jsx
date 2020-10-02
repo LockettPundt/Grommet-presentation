@@ -8,7 +8,7 @@ export default function Slide9() {
     <Slide prev="8" next="10">
       <Box>
         <Paragraph
-          size="large"
+          size="xlarge"
         >
           The
           {' '}
@@ -18,13 +18,6 @@ export default function Slide9() {
           testing suite, and is meant to “enforce firm, unambiguous requirements…and
           a script for automated testing.”
         </Paragraph>
-        {/* <Paragraph
-          size="large"
-        >
-          Using it in a Pivotal story description, it provides the assignee
-          a context in which to understand the situation/task, what is happening
-          with the current bug/feature and what should
-        </Paragraph> */}
       </Box>
     </Slide>
   );

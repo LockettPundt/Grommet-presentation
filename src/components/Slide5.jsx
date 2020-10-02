@@ -1,6 +1,6 @@
 /* eslint-disable import/extensions */
 import React from 'react';
-import { Text, Box } from 'grommet';
+import { Box, Paragraph } from 'grommet';
 import { Grommet, Figma } from 'grommet-icons';
 import Slide from './Slide.jsx';
 
@@ -8,28 +8,22 @@ export default function Slide5() {
   return (
     <Slide prev="4" next="6">
       <Box>
-        <Text
+        <Paragraph
           size="large"
         >
           <Grommet size="medium" color="plain" />
           &apos;s reusable components can be mixed and
           matched with your existing components and custom tailored to
           fit your project&apos;s aesthetic.
-        </Text>
-        <Text
+        </Paragraph>
+        <Paragraph
           size="large"
-          margin={{
-            top: '10px',
-          }}
         >
           Themes can also be extended to create a localized context of
           new component properties as needed.
-        </Text>
-        <Text
+        </Paragraph>
+        <Paragraph
           size="large"
-          margin={{
-            top: '10px',
-          }}
         >
           Easy integration with StoryBook,
           {' '}
@@ -38,12 +32,9 @@ export default function Slide5() {
           {' '}
           <Grommet size="medium" color="plain" />
           &apos;s Design Kit.
-        </Text>
-        <Text
+        </Paragraph>
+        <Paragraph
           size="large"
-          margin={{
-            top: '10px',
-          }}
         >
           And of course, all the
           {' '}
@@ -52,7 +43,7 @@ export default function Slide5() {
           {' '}
           magic is
           there too.
-        </Text>
+        </Paragraph>
       </Box>
     </Slide>
   );

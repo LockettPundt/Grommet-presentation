@@ -1,14 +1,14 @@
 /* eslint-disable import/extensions */
 import React from 'react';
-import { Text } from 'grommet';
+import { Paragraph } from 'grommet';
 import { Grommet } from 'grommet-icons';
 import Slide from './Slide.jsx';
 
 export default function Slide2() {
   return (
     <Slide prev="1" next="3">
-      <Text
-        size="large"
+      <Paragraph
+        size="xlarge"
       >
         <Grommet size="medium" color="plain" />
         {' '}
@@ -22,7 +22,7 @@ export default function Slide2() {
         {' '}
         framework that provides accessibility,
         modularity, responsiveness, and theming in a tidy package.
-      </Text>
+      </Paragraph>
     </Slide>
   );
 }

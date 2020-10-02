@@ -20,6 +20,9 @@ import Slide6 from './components/Slide6.jsx';
 import Slide7 from './components/Slide7.jsx';
 import Slide8 from './components/Slide8.jsx';
 import Slide9 from './components/Slide9.jsx';
+import Slide10 from './components/Slide10.jsx';
+import Slide11 from './components/Slide11.jsx';
+import Slide12 from './components/Slide12.jsx';
 
 export default function App() {
   return (
@@ -43,6 +46,9 @@ export default function App() {
             <Route path="/7" component={Slide7} />
             <Route path="/8" component={Slide8} />
             <Route path="/9" component={Slide9} />
+            <Route path="/10" component={Slide10} />
+            <Route path="/11" component={Slide11} />
+            <Route path="/12" component={Slide12} />
           </Switch>
         </Main>
       </Router>

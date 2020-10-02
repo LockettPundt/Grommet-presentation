@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import {
   Text, Box, Accordion, AccordionPanel, Menu, Layer,
-  Form, FormField, TextInput, Button, DataTable, Meter, Clock,
+  Form, FormField, TextInput, Button, DataTable, Meter, Clock, Paragraph,
 } from 'grommet';
 import { Grommet } from 'grommet-icons';
 import Slide from './Slide.jsx';
@@ -19,18 +19,20 @@ export default function Slide6() {
     <Slide prev="5" next="7">
       <Box
         direction="row"
+        align="center"
       >
         <Grommet size="medium" color="plain" />
-        <Text
+        <Paragraph
           margin={{
             left: '10px',
           }}
           weight="bold"
-          size="large"
+          size="xlarge"
+          alignSelf="center"
         >
           {' '}
           Example Components
-        </Text>
+        </Paragraph>
       </Box>
       {accordion && (
         <Layer>
@@ -38,12 +40,13 @@ export default function Slide6() {
             <Accordion>
               <AccordionPanel label="Hi There!">
                 <Box pad="medium" background="#444444">
-                  <Text>HI!</Text>
+                  <Text size="xlarge">HI!</Text>
                 </Box>
               </AccordionPanel>
               <AccordionPanel label="Bye Now!">
                 <Box pad="medium" background="#444444">
                   <Text
+                    size="xlarge"
                     onClick={() => setAcordion(!accordion)}
                   >
                     Bye!
@@ -126,6 +129,7 @@ export default function Slide6() {
         </Layer>
       )}
       <Menu
+        size="medium"
         label="Components"
         items={[
           { label: 'Check out this modal bruh.', onClick: () => setModalOpen(!modalOpen) },
